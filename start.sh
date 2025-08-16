@@ -1,11 +1,11 @@
 #!/bin/bash  
-export UUID=${UUID:-'5ecc0799-1464-48b1-87c0-bbdeb63823fc'} # 哪吒v1,在不同的平台部署需要改UUID，否则会覆盖
+export UUID=${UUID:-'288e0a92-06e9-4289-b7b4-d5e61f21b9d9'} # 哪吒v1,在不同的平台部署需要改UUID，否则会覆盖
 export NEZHA_SERVER=${NEZHA_SERVER:-''}       # v1哪吒填写形式：nezha.abc.com:8008,v0哪吒填写形式：nezha.abc.com
 export NEZHA_PORT=${NEZHA_PORT:-''}           # v1哪吒不要填写这个,v0哪吒agent端口为{443,8443,2053,2083,2087,2096}其中之一时自动开启tls
 export NEZHA_KEY=${NEZHA_KEY:-''}             # v1的NZ_CLIENT_SECRET或v0的agent密钥
 export ARGO_DOMAIN=${ARGO_DOMAIN:-''}         # 固定隧道域名,留空即启用临时隧道
 export ARGO_AUTH=${ARGO_AUTH:-''}             # 固定隧道token或json,留空即启用临时隧道
-export CFIP=${CFIP:-'joeyblog.net'}        # argo节点优选域名或优选ip
+export CFIP=${CFIP:-'172.67.92.42'}        # argo节点优选域名或优选ip
 export CFPORT=${CFPORT:-'443'}                # argo节点端口 
 export NAME=${NAME:-'Vls'}                    # 节点名称  
 export FILE_PATH=${FILE_PATH:-'./.npm'}       # sub 路径  
